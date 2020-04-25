@@ -1,0 +1,62 @@
+brew:
+  enable_update: false
+  enable_upgrade: false
+  add_repositories:
+  - homebrew/cask-versions
+  - homebrew/cask-fonts
+  - phinze/homebrew-cask
+  - caskroom/cask
+  install_packages:
+    - brew-cask
+    - fish
+    - vim
+    - tmux
+    - git
+    - wget
+    - tree
+    - thefuck
+    - mask
+    - openssl
+    - docker-compose
+    - teraform
+    - curl
+    - ffmpeg
+    - tree
+    - hub
+    - tig
+    - jq
+    - peco
+    - rust
+    - node
+    - yarn
+  install_apps:
+    - alfred
+    - google-chrome
+    - iterm2
+    - slack
+    - google-japanese-ime
+    - github
+    - docker
+    - intellij-idea
+    - android-studio
+    - zoomus
+    - visual-studio-code
+    - sourcetree
+    - psequel
+    - vlc
+    - karabiner-elements
+    - font-hackgen
+    - visualvm
+    - wireshark
+    - gimp
+    - sequel-pro-nightly
+    - clipy
+    - cyberduck
+sdkman:
+  - java
+  - dotty
+  - gradle
+  - groovy
+  - kotlin
+  - sbt
+  - scala
