@@ -2,12 +2,12 @@ language: ruby
 rvm: 2.4.0
 os: osx
 osx_image: xcode11.3
-install: bundle install --deployment
-cache:
-  directories:
-    - vendor/bundle
-    - /usr/local/bin/
-    - /Applications
+before_install: bundle install --deployment
+# cache:
+#   directories:
+#     - vendor/bundle
+#     - /usr/local/bin/
+#     - /Applications
 stage:
 - syntax
 - test
