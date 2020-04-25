@@ -12,6 +12,7 @@ stage:
 - syntax
 - test
 - dry-run
+- run
 
 jobs:
   include:
@@ -20,8 +21,13 @@ jobs:
       script: echo "jobs syntax test"
     - stage: test
       name: test
-      script: echo "jobs test"
+      script:
+        - bundle exec rake spec
     - stage: dry-run
       name: dry-run
       script:
         - bundle exec itamae local --dry-run recipes/brew.rb -y nodes/local.yml -l
+    - stage: run
+      name: run
+      script:
+        - bundle exec itamae local recipes/brew.rb -y nodes/local.yml -l
