@@ -1,0 +1,27 @@
+language: ruby
+rvm: 2.4.0
+os: osx
+osx_image: xcode11.3
+install: bundle install --deployment
+cache:
+  directories:
+    - vendor/bundle
+    - /usr/local/bin/
+    - /Applications
+stage:
+- syntax
+- test
+- dry-run
+
+jobs:
+  include:
+    - stage: syntax
+      name: syntax
+      script: echo "jobs syntax test"
+    - stage: test
+      name: test
+      script: echo "jobs test"
+    - stage: dry-run
+      name: dry-run
+      script:
+        - bundle exec itamae local --dry-run recipes/brew.rb -y nodes/local.yml -l
