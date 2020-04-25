@@ -52,6 +52,7 @@ brew:
     - sequel-pro-nightly
     - clipy
     - cyberduck
+    - discord
 sdkman:
   - java
   - dotty
