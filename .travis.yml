@@ -26,8 +26,8 @@ jobs:
     - stage: dry-run
       name: dry-run
       script:
-        - bundle exec itamae local --dry-run recipes/brew.rb -y nodes/local.yml -l
+        - sh ./dry-run.sh
     - stage: run
       name: run
       script:
-        - bundle exec itamae local recipes/brew.rb -y nodes/local.yml -l
+        - sh ./setup.sh

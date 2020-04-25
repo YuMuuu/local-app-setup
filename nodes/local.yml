@@ -4,10 +4,7 @@ brew:
   add_repositories:
   - homebrew/cask-versions
   - homebrew/cask-fonts
-  - phinze/homebrew-cask
-  - caskroom/cask
   install_packages:
-    - brew-cask
     - fish
     - vim
     - tmux
@@ -15,10 +12,10 @@ brew:
     - wget
     - tree
     - thefuck
-    - mask
+    # - mask
     - openssl
     - docker-compose
-    - teraform
+    - terraform
     - curl
     - ffmpeg
     - tree
