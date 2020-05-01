@@ -3,7 +3,7 @@ rvm: 2.4.0
 os: osx
 osx_image: xcode11.3
 before_install: bundle install --deployment
-sudo: true
+sudo: required
 # cache:
 #   directories:
 #     - vendor/bundle
