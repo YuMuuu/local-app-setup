@@ -86,6 +86,7 @@ directory "$HOME/src/private" do
 end
 
 # Setting fish shell
-execute "Setting default fish shell" do
-  command "echo /usr/local/bin/fish | sudo tee -a /etc/shells && chsh -s /usr/local/bin/fish"
-end
+# cant success travis ci this code.
+# execute "Setting default fish shell" do
+#   command "echo /usr/local/bin/fish | sudo tee -a /etc/shells && chsh -s /usr/local/bin/fish"
+# end
