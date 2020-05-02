@@ -1,0 +1,23 @@
+language: ruby
+rvm: 2.4.0
+os: osx
+osx_image: xcode11.3
+before_install: bundle install --deployment
+stage:
+# - syntax
+- dry-run
+- run
+
+jobs:
+  include:
+    # - stage: syntax
+    #   name: syntax
+    #   script: echo "jobs syntax test"
+    - stage: dry-run
+      name: dry-run
+      script:
+        - sh ./dry-run.sh
+    - stage: run
+      name: run
+      script:
+        - sh ./setup.sh
