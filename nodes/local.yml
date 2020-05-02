@@ -51,18 +51,28 @@ brew:
     - cyberduck
     - discord
   install_apps_from_store:
-    - Microsoft\ Excel
-    - Focus
-    - Numbers
-    - Microsoft PowerPoint
-    - 1Password\ 7
-    - Pages
-    - Keynote
-    - LINE
-    - Magnet
-    - Microsoft\ Word
-    - Kindle
-    - Slack
+    # Microsoft Excel
+    - 462058435
+    # Microsoft Word
+    - 462054704
+    # Microsoft PowerPoint
+    - 462062816
+    # Focus
+    - 777233759
+    # 1Password
+    - 1333542190
+    # Pages
+    - 409201541
+    # Keynote
+    - 409183694
+    # LINE
+    - 539883307
+    # Magnet
+    - 441258766
+    # Kindle
+    - 405399194
+    # Slack
+    - 803453959
 sdkman:
   - java
   - dotty
