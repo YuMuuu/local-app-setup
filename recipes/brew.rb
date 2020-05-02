@@ -51,6 +51,14 @@ node["brew"]["install_apps"].each do |app|
   end
 end
 
+# Install app store apps
+node["brew"]["install_apps_from_store"].each do |app|
+  execute "Install app_store apps: #{app}" do
+    command "mas install #{aoo}"
+    not_if "mas list | grep -q #{app}"
+  end
+end
+
 # # Setup alfred
 # execute "Setup alfred" do
 #   command "brew cask alfred link"

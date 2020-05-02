@@ -8,6 +8,7 @@ brew:
   - caskroom/cask
   install_packages:
     - brew-cask
+    - mas 
     - fish
     - vim
     - tmux
@@ -33,7 +34,6 @@ brew:
     - alfred
     - google-chrome
     - iterm2
-    - slack
     - google-japanese-ime
     - github
     - docker
@@ -53,6 +53,19 @@ brew:
     - clipy
     - cyberduck
     - discord
+  install_apps_from_store:
+    - Microsoft\ Excel
+    - Focus
+    - Numbers
+    - Microsoft PowerPoint
+    - 1Password\ 7
+    - Pages
+    - Keynote
+    - LINE
+    - Magnet
+    - Microsoft\ Word
+    - Kindle
+    - Slack
 sdkman:
   - java
   - dotty
