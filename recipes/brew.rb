@@ -34,14 +34,12 @@ node["brew"]["add_repositories"].each do |repo|
   end
 end
 
-# # Install bin packages
+# Install bin packages
 node["brew"]["install_packages"].each do |package|
   package "#{package}" do
     not_if "brew list | grep -q #{package}"
   end
 end
-
-
 
 # Install apps
 node["brew"]["install_apps"].each do |app|
@@ -54,7 +52,7 @@ end
 # Install app store apps
 node["brew"]["install_apps_from_store"].each do |app|
   execute "Install app_store apps: #{app}" do
-    command "mas install #{aoo}"
+    command "mas install #{app}"
     not_if "mas list | grep -q #{app}"
   end
 end
@@ -63,7 +61,6 @@ end
 # execute "Setup alfred" do
 #   command "brew cask alfred link"
 # end
-
 
 # Install sdkman
 execute "Install sdkman" do
@@ -97,6 +94,7 @@ directory "$HOME/src/private" do
 end
 
 # Setting fish shell
-execute "Setting default fish shell" do
-  command "sudo echo /usr/local/bin/fish >> /etc/shells && chsh -s /usr/local/bin/fish"
-end
+# cant success travis ci this code.
+# execute "Setting default fish shell" do
+#   command "echo /usr/local/bin/fish | sudo tee -a /etc/shells && chsh -s /usr/local/bin/fish"
+# end
