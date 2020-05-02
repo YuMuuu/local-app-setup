@@ -4,11 +4,11 @@ os: osx
 osx_image: xcode11.3
 before_install: bundle install --deployment
 sudo: required
-# cache:
-#   directories:
-#     - vendor/bundle
-#     - /usr/local/bin/
-#     - /Applications
+cache:
+  directories:
+    - vendor/bundle
+    - /usr/local/bin/
+    - /Applications
 stage:
 # - syntax
 # - test
