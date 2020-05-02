@@ -49,6 +49,15 @@ node["brew"]["install_apps"].each do |app|
   end
 end
 
+# fixme: can't build ci
+# # Install app store apps
+# node["brew"]["install_apps_from_store"].each do |app|
+#   execute "Install app_store apps: #{app}" do
+#     command "mas install #{app}"
+#     not_if "mas list | grep -q #{app}"
+#   end
+# end
+
 # # Setup alfred
 # execute "Setup alfred" do
 #   command "brew cask alfred link"
@@ -85,8 +94,8 @@ end
 directory "$HOME/src/private" do
 end
 
+# fixme: can't build ci
 # Setting fish shell
-# cant success travis ci this code.
 # execute "Setting default fish shell" do
 #   command "echo /usr/local/bin/fish | sudo tee -a /etc/shells && chsh -s /usr/local/bin/fish"
 # end
