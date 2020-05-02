@@ -3,15 +3,8 @@ rvm: 2.4.0
 os: osx
 osx_image: xcode11.3
 before_install: bundle install --deployment
-script: travis_wait 30 script.sh
-cache:
-  directories:
-    - vendor/bundle
-    - /usr/local/bin/
-    - /Applications
 stage:
 # - syntax
-# - test
 - dry-run
 - run
 
@@ -20,10 +13,6 @@ jobs:
     # - stage: syntax
     #   name: syntax
     #   script: echo "jobs syntax test"
-    # - stage: test
-    #   name: test
-    #   script:
-    #     - bundle exec rake spec
     - stage: dry-run
       name: dry-run
       script:
