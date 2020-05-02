@@ -5,7 +5,6 @@ brew:
   - homebrew/cask-versions
   - homebrew/cask-fonts
   install_packages:
-    - brew-cask
     - mas 
     - fish
     - vim
