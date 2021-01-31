@@ -1,0 +1,74 @@
+tap 'homebrew/bundle'
+tap 'homebrew/cask'
+tap 'homebrew/cask-versions'
+tap 'homebrew/core'
+
+# brew 
+brew 'ansible'
+brew 'mas'
+brew 'fish'
+brew 'vim'
+brew 'tmux'
+brew 'git'
+brew 'wget'
+brew 'tree'
+brew 'thefuck'
+brew 'mask'
+brew 'openssl'
+brew 'docker-compose'
+brew 'terraform'
+brew 'curl'
+brew 'ffmpeg'
+brew 'tree'
+brew 'hub'
+brew 'tig'
+brew 'jq'
+brew 'peco'
+brew 'rust'
+brew 'node'
+brew 'yarn'
+
+
+# saml2aws + aws-cli
+tap 'versent/homebrew-taps'
+brew 'awscli'
+brew 'saml2aws'
+
+
+# fonts
+tap 'homebrew/cask-fonts'
+cask 'font-hackgen'
+cask 'font-hackgen-nerd'
+
+
+# cask
+cask_args appdir: '/Applications'
+
+cask 'alfred'
+cask 'clipy'
+cask 'discord'
+cask 'github'
+cask 'jetbrains-toolbox'
+cask 'google-japanese-ime'
+cask 'psequel'
+cask 'sourcetree'
+cask 'visualvm'
+cask 'wireshark'
+cask 'cyberduck'
+cask 'docker'
+cask 'gimp'
+cask 'google-chrome'
+cask 'iterm2'
+cask 'ngrok'
+cask 'obs'
+cask 'sequel-pro-nightly'
+cask 'visual-studio-code'
+cask 'zoomus'
+
+#mas 
+mas 'Focus', id:777233759
+mas 'Keynote', id: 409183694
+#mas 'LINE', id: 539883307
+mas 'Magnet', id:441258766
+mas 'Kindle', id:405399194
+mas 'Slack', id:803453959
